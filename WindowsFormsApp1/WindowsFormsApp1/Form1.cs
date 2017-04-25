@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,10 +26,12 @@ namespace WindowsFormsApp1
 
         //Datos compartidos
         int[,] datL2;
+
         string[] mem;
 
         public Form1()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitData();
             InitializeComponent();
 
@@ -87,6 +90,7 @@ namespace WindowsFormsApp1
         }
 
         private void LlenaProc(int proc) {
+
 
             //Ingresa los valores de las instrucciones.
             var dataInstP1 = (proc < 2 ? instP1 : instP2).Select((x, index) => new { lineaInstP1 = index + 1, InstruccionP1 = x })
@@ -162,6 +166,53 @@ namespace WindowsFormsApp1
             //TODO: corregir este caso
             memData.Remove(memData.Last()); memData.Remove(memData.Last()); memData.Remove(memData.Last()); memData.Remove(memData.Last());
         }
+
+
+        private void  DummyMethod(int sum) {
+            for (int i = 0; i < datL1P1.Length/4; i++) {
+                for (int j = 0; j < 2; j++)
+                {
+                    datL1P1[i,j] = datL1P1[i,j] + sum;
+                }
+            }
+
+            for (int i = 0; i < datL1P2.Length/4; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    datL1P2[i, j] = datL1P1[i, j] + sum;
+                }
+            }
+        }
+
+
+        private void btnNextStep_Click(object sender, EventArgs e)
+        {
+            Thread P1 = new Thread(() => DummyMethod(1));
+            Thread P2 = new Thread(() => DummyMethod(4));
+            P1.Start();
+            P2.Start();
+            
+            Task.WaitAll();
+            RefreshData(0);
+
+
+            btnNextStep.Enabled = false;
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            Thread P1 = new Thread(() => DummyMethod(2));
+            Thread P2 = new Thread(() => DummyMethod(5));
+            P1.Start();
+            P2.Start();
+
+            Task.WaitAll();
+
+            btnContinue.Enabled = false;
+        }
+
+        
     }
         
 }

@@ -54,48 +54,13 @@ namespace WindowsFormsApp1
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataDataL2 = new System.Windows.Forms.DataGridView();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dataMem = new System.Windows.Forms.DataGridView();
-            this.Memoria = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataRegP1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataDataL1P1 = new System.Windows.Forms.DataGridView();
-            this.dataInstructP1 = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataRegP2 = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dataDataL1P2 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataInstructP2 = new System.Windows.Forms.DataGridView();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lineaInstP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InstruccionP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineaInstP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.InstruccionP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineDataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proc1P1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proc1P2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.etiqP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.p2Etiq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineNumberRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valueRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numLinL2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataL2P1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataL2P2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataL2Etiq = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.L2Est = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dataMem = new System.Windows.Forms.DataGridView();
             this.line1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.line2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,6 +71,41 @@ namespace WindowsFormsApp1
             this.value4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Line5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.value5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Memoria = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataRegP1 = new System.Windows.Forms.DataGridView();
+            this.lineRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataDataL1P1 = new System.Windows.Forms.DataGridView();
+            this.lineDataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proc1P1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proc1P2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.etiqP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataInstructP1 = new System.Windows.Forms.DataGridView();
+            this.lineaInstP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InstruccionP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dataRegP2 = new System.Windows.Forms.DataGridView();
+            this.lineNumberRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dataDataL1P2 = new System.Windows.Forms.DataGridView();
+            this.lineNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.p2Etiq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataInstructP2 = new System.Windows.Forms.DataGridView();
+            this.lineaInstP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InstruccionP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataL2)).BeginInit();
@@ -124,39 +124,41 @@ namespace WindowsFormsApp1
             // 
             // btnAuto
             // 
-            this.btnAuto.Location = new System.Drawing.Point(63, 10);
+            this.btnAuto.Location = new System.Drawing.Point(77, 10);
             this.btnAuto.Name = "btnAuto";
-            this.btnAuto.Size = new System.Drawing.Size(75, 23);
+            this.btnAuto.Size = new System.Drawing.Size(97, 23);
             this.btnAuto.TabIndex = 12;
             this.btnAuto.Text = "Automatico";
             this.btnAuto.UseVisualStyleBackColor = true;
             // 
             // btnStepByStep
             // 
-            this.btnStepByStep.Location = new System.Drawing.Point(63, 39);
+            this.btnStepByStep.Location = new System.Drawing.Point(77, 39);
             this.btnStepByStep.Name = "btnStepByStep";
-            this.btnStepByStep.Size = new System.Drawing.Size(75, 23);
+            this.btnStepByStep.Size = new System.Drawing.Size(97, 23);
             this.btnStepByStep.TabIndex = 13;
             this.btnStepByStep.Text = "Paso a Paso";
             this.btnStepByStep.UseVisualStyleBackColor = true;
             // 
             // btnNextStep
             // 
-            this.btnNextStep.Location = new System.Drawing.Point(67, 10);
+            this.btnNextStep.Location = new System.Drawing.Point(81, 10);
             this.btnNextStep.Name = "btnNextStep";
-            this.btnNextStep.Size = new System.Drawing.Size(87, 23);
+            this.btnNextStep.Size = new System.Drawing.Size(109, 23);
             this.btnNextStep.TabIndex = 16;
             this.btnNextStep.Text = "Siguiente Paso";
             this.btnNextStep.UseVisualStyleBackColor = true;
+            this.btnNextStep.Click += new System.EventHandler(this.btnNextStep_Click);
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(73, 39);
+            this.btnContinue.Location = new System.Drawing.Point(87, 39);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(75, 23);
+            this.btnContinue.Size = new System.Drawing.Size(97, 23);
             this.btnContinue.TabIndex = 17;
             this.btnContinue.Text = "Continuar";
             this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // groupBox1
             // 
@@ -164,18 +166,18 @@ namespace WindowsFormsApp1
             this.groupBox1.Controls.Add(this.btnAuto);
             this.groupBox1.Location = new System.Drawing.Point(44, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(153, 67);
+            this.groupBox1.Size = new System.Drawing.Size(186, 67);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Modalidad";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnContinue);
             this.groupBox2.Controls.Add(this.btnNextStep);
-            this.groupBox2.Location = new System.Drawing.Point(203, 10);
+            this.groupBox2.Controls.Add(this.btnContinue);
+            this.groupBox2.Location = new System.Drawing.Point(238, 10);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(168, 67);
+            this.groupBox2.Size = new System.Drawing.Size(201, 67);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funciones";
@@ -186,7 +188,7 @@ namespace WindowsFormsApp1
             this.label1.Enabled = false;
             this.label1.Location = new System.Drawing.Point(64, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 0;
             // 
             // dataDataL2
@@ -200,391 +202,12 @@ namespace WindowsFormsApp1
             this.dataL2P2,
             this.dataL2Etiq,
             this.L2Est});
-            this.dataDataL2.Location = new System.Drawing.Point(664, 25);
+            this.dataDataL2.Location = new System.Drawing.Point(755, 29);
             this.dataDataL2.Name = "dataDataL2";
             this.dataDataL2.ReadOnly = true;
             this.dataDataL2.RowHeadersVisible = false;
-            this.dataDataL2.Size = new System.Drawing.Size(129, 208);
+            this.dataDataL2.Size = new System.Drawing.Size(138, 387);
             this.dataDataL2.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(707, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Datos L2";
-            // 
-            // dataMem
-            // 
-            this.dataMem.AllowUserToAddRows = false;
-            this.dataMem.AllowUserToDeleteRows = false;
-            this.dataMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataMem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.line1,
-            this.data1,
-            this.line2,
-            this.value2,
-            this.line3,
-            this.value3,
-            this.line4,
-            this.value4,
-            this.Line5,
-            this.value5});
-            this.dataMem.Location = new System.Drawing.Point(799, 25);
-            this.dataMem.Name = "dataMem";
-            this.dataMem.ReadOnly = true;
-            this.dataMem.RowHeadersVisible = false;
-            this.dataMem.Size = new System.Drawing.Size(224, 283);
-            this.dataMem.TabIndex = 20;
-            // 
-            // Memoria
-            // 
-            this.Memoria.AutoSize = true;
-            this.Memoria.Location = new System.Drawing.Point(877, 11);
-            this.Memoria.Name = "Memoria";
-            this.Memoria.Size = new System.Drawing.Size(47, 13);
-            this.Memoria.TabIndex = 21;
-            this.Memoria.Text = "Memoria";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.dataRegP1);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.dataDataL1P1);
-            this.groupBox3.Controls.Add(this.dataInstructP1);
-            this.groupBox3.Location = new System.Drawing.Point(6, 13);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(323, 242);
-            this.groupBox3.TabIndex = 22;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Procesador 1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Registros P1";
-            // 
-            // dataRegP1
-            // 
-            this.dataRegP1.AllowUserToAddRows = false;
-            this.dataRegP1.AllowUserToDeleteRows = false;
-            this.dataRegP1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataRegP1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lineRegP1,
-            this.estRegP1});
-            this.dataRegP1.Location = new System.Drawing.Point(237, 28);
-            this.dataRegP1.Name = "dataRegP1";
-            this.dataRegP1.ReadOnly = true;
-            this.dataRegP1.RowHeadersVisible = false;
-            this.dataRegP1.Size = new System.Drawing.Size(80, 208);
-            this.dataRegP1.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(128, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Datos P1 L1";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Instrucciones P1";
-            // 
-            // dataDataL1P1
-            // 
-            this.dataDataL1P1.AllowUserToAddRows = false;
-            this.dataDataL1P1.AllowUserToDeleteRows = false;
-            this.dataDataL1P1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataDataL1P1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lineDataP1,
-            this.proc1P1,
-            this.proc1P2,
-            this.etiqP1,
-            this.estP1});
-            this.dataDataL1P1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataDataL1P1.Location = new System.Drawing.Point(102, 28);
-            this.dataDataL1P1.Name = "dataDataL1P1";
-            this.dataDataL1P1.ReadOnly = true;
-            this.dataDataL1P1.RowHeadersVisible = false;
-            this.dataDataL1P1.Size = new System.Drawing.Size(129, 111);
-            this.dataDataL1P1.TabIndex = 3;
-            // 
-            // dataInstructP1
-            // 
-            this.dataInstructP1.AllowUserToAddRows = false;
-            this.dataInstructP1.AllowUserToDeleteRows = false;
-            this.dataInstructP1.AllowUserToResizeColumns = false;
-            this.dataInstructP1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.NullValue = "0";
-            this.dataInstructP1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataInstructP1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dataInstructP1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataInstructP1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lineaInstP1,
-            this.InstruccionP1});
-            this.dataInstructP1.Location = new System.Drawing.Point(6, 28);
-            this.dataInstructP1.Name = "dataInstructP1";
-            this.dataInstructP1.ReadOnly = true;
-            this.dataInstructP1.RowHeadersVisible = false;
-            this.dataInstructP1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataInstructP1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataInstructP1.Size = new System.Drawing.Size(90, 111);
-            this.dataInstructP1.TabIndex = 1;
-            this.dataInstructP1.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.dataRegP2);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.dataDataL1P2);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.dataInstructP2);
-            this.groupBox4.Location = new System.Drawing.Point(335, 13);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(323, 242);
-            this.groupBox4.TabIndex = 23;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Procesador 2";
-            // 
-            // dataRegP2
-            // 
-            this.dataRegP2.AllowUserToAddRows = false;
-            this.dataRegP2.AllowUserToDeleteRows = false;
-            this.dataRegP2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataRegP2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lineNumberRegP2,
-            this.valueRegP2});
-            this.dataRegP2.Location = new System.Drawing.Point(235, 28);
-            this.dataRegP2.Name = "dataRegP2";
-            this.dataRegP2.ReadOnly = true;
-            this.dataRegP2.RowHeadersVisible = false;
-            this.dataRegP2.Size = new System.Drawing.Size(80, 208);
-            this.dataRegP2.TabIndex = 11;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(238, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Registros P2";
-            // 
-            // dataDataL1P2
-            // 
-            this.dataDataL1P2.AllowUserToAddRows = false;
-            this.dataDataL1P2.AllowUserToDeleteRows = false;
-            this.dataDataL1P2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataDataL1P2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lineNumber,
-            this.dataP1,
-            this.dataP2,
-            this.p2Etiq,
-            this.estP2});
-            this.dataDataL1P2.Location = new System.Drawing.Point(100, 28);
-            this.dataDataL1P2.Name = "dataDataL1P2";
-            this.dataDataL1P2.ReadOnly = true;
-            this.dataDataL1P2.RowHeadersVisible = false;
-            this.dataDataL1P2.Size = new System.Drawing.Size(129, 111);
-            this.dataDataL1P2.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(122, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Datos P2 L1";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Instrucciones P2";
-            // 
-            // dataInstructP2
-            // 
-            this.dataInstructP2.AllowUserToAddRows = false;
-            this.dataInstructP2.AllowUserToDeleteRows = false;
-            this.dataInstructP2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataInstructP2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lineaInstP2,
-            this.InstruccionP2});
-            this.dataInstructP2.Location = new System.Drawing.Point(4, 28);
-            this.dataInstructP2.Name = "dataInstructP2";
-            this.dataInstructP2.ReadOnly = true;
-            this.dataInstructP2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataInstructP2.RowHeadersVisible = false;
-            this.dataInstructP2.Size = new System.Drawing.Size(90, 111);
-            this.dataInstructP2.TabIndex = 6;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.groupBox4);
-            this.groupBox5.Controls.Add(this.groupBox3);
-            this.groupBox5.Controls.Add(this.Memoria);
-            this.groupBox5.Controls.Add(this.dataMem);
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.dataDataL2);
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Location = new System.Drawing.Point(11, 85);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1029, 320);
-            this.groupBox5.TabIndex = 24;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Estados";
-            // 
-            // programBindingSource
-            // 
-            this.programBindingSource.DataSource = typeof(WindowsFormsApp1.Program);
-            // 
-            // lineaInstP1
-            // 
-            this.lineaInstP1.HeaderText = "#";
-            this.lineaInstP1.Name = "lineaInstP1";
-            this.lineaInstP1.ReadOnly = true;
-            this.lineaInstP1.Width = 18;
-            // 
-            // InstruccionP1
-            // 
-            this.InstruccionP1.HeaderText = "Instruccion";
-            this.InstruccionP1.Name = "InstruccionP1";
-            this.InstruccionP1.ReadOnly = true;
-            this.InstruccionP1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.InstruccionP1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.InstruccionP1.Width = 68;
-            // 
-            // lineaInstP2
-            // 
-            this.lineaInstP2.HeaderText = "#";
-            this.lineaInstP2.Name = "lineaInstP2";
-            this.lineaInstP2.ReadOnly = true;
-            this.lineaInstP2.Width = 18;
-            // 
-            // InstruccionP2
-            // 
-            this.InstruccionP2.HeaderText = "Instruccion";
-            this.InstruccionP2.Name = "InstruccionP2";
-            this.InstruccionP2.ReadOnly = true;
-            this.InstruccionP2.Width = 68;
-            // 
-            // lineDataP1
-            // 
-            this.lineDataP1.HeaderText = "#";
-            this.lineDataP1.Name = "lineDataP1";
-            this.lineDataP1.ReadOnly = true;
-            this.lineDataP1.Width = 18;
-            // 
-            // proc1P1
-            // 
-            this.proc1P1.HeaderText = "P1";
-            this.proc1P1.Name = "proc1P1";
-            this.proc1P1.ReadOnly = true;
-            this.proc1P1.Width = 23;
-            // 
-            // proc1P2
-            // 
-            this.proc1P2.HeaderText = "P2";
-            this.proc1P2.Name = "proc1P2";
-            this.proc1P2.ReadOnly = true;
-            this.proc1P2.Width = 23;
-            // 
-            // etiqP1
-            // 
-            this.etiqP1.HeaderText = "Etiq.";
-            this.etiqP1.Name = "etiqP1";
-            this.etiqP1.ReadOnly = true;
-            this.etiqP1.Width = 35;
-            // 
-            // estP1
-            // 
-            this.estP1.HeaderText = "Est.";
-            this.estP1.Name = "estP1";
-            this.estP1.ReadOnly = true;
-            this.estP1.Width = 27;
-            // 
-            // lineRegP1
-            // 
-            this.lineRegP1.HeaderText = "#";
-            this.lineRegP1.Name = "lineRegP1";
-            this.lineRegP1.ReadOnly = true;
-            this.lineRegP1.Width = 20;
-            // 
-            // estRegP1
-            // 
-            this.estRegP1.HeaderText = "Valor";
-            this.estRegP1.Name = "estRegP1";
-            this.estRegP1.ReadOnly = true;
-            this.estRegP1.Width = 40;
-            // 
-            // lineNumber
-            // 
-            this.lineNumber.HeaderText = "#";
-            this.lineNumber.Name = "lineNumber";
-            this.lineNumber.ReadOnly = true;
-            this.lineNumber.Width = 18;
-            // 
-            // dataP1
-            // 
-            this.dataP1.HeaderText = "P1";
-            this.dataP1.Name = "dataP1";
-            this.dataP1.ReadOnly = true;
-            this.dataP1.Width = 23;
-            // 
-            // dataP2
-            // 
-            this.dataP2.HeaderText = "P2";
-            this.dataP2.Name = "dataP2";
-            this.dataP2.ReadOnly = true;
-            this.dataP2.Width = 23;
-            // 
-            // p2Etiq
-            // 
-            this.p2Etiq.HeaderText = "Etiq.";
-            this.p2Etiq.Name = "p2Etiq";
-            this.p2Etiq.ReadOnly = true;
-            this.p2Etiq.Width = 35;
-            // 
-            // estP2
-            // 
-            this.estP2.HeaderText = "Est.";
-            this.estP2.Name = "estP2";
-            this.estP2.ReadOnly = true;
-            this.estP2.Width = 27;
-            // 
-            // lineNumberRegP2
-            // 
-            this.lineNumberRegP2.HeaderText = "#";
-            this.lineNumberRegP2.Name = "lineNumberRegP2";
-            this.lineNumberRegP2.ReadOnly = true;
-            this.lineNumberRegP2.Width = 20;
-            // 
-            // valueRegP2
-            // 
-            this.valueRegP2.HeaderText = "Valor";
-            this.valueRegP2.Name = "valueRegP2";
-            this.valueRegP2.ReadOnly = true;
-            this.valueRegP2.Width = 40;
             // 
             // numLinL2
             // 
@@ -620,6 +243,38 @@ namespace WindowsFormsApp1
             this.L2Est.Name = "L2Est";
             this.L2Est.ReadOnly = true;
             this.L2Est.Width = 27;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(798, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Datos L2";
+            // 
+            // dataMem
+            // 
+            this.dataMem.AllowUserToAddRows = false;
+            this.dataMem.AllowUserToDeleteRows = false;
+            this.dataMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataMem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.line1,
+            this.data1,
+            this.line2,
+            this.value2,
+            this.line3,
+            this.value3,
+            this.line4,
+            this.value4,
+            this.Line5,
+            this.value5});
+            this.dataMem.Location = new System.Drawing.Point(906, 35);
+            this.dataMem.Name = "dataMem";
+            this.dataMem.ReadOnly = true;
+            this.dataMem.RowHeadersVisible = false;
+            this.dataMem.Size = new System.Drawing.Size(299, 555);
+            this.dataMem.TabIndex = 20;
             // 
             // line1
             // 
@@ -691,17 +346,369 @@ namespace WindowsFormsApp1
             this.value5.ReadOnly = true;
             this.value5.Width = 20;
             // 
+            // Memoria
+            // 
+            this.Memoria.AutoSize = true;
+            this.Memoria.Location = new System.Drawing.Point(975, 15);
+            this.Memoria.Name = "Memoria";
+            this.Memoria.Size = new System.Drawing.Size(59, 17);
+            this.Memoria.TabIndex = 21;
+            this.Memoria.Text = "Memoria";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.dataRegP1);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.dataDataL1P1);
+            this.groupBox3.Controls.Add(this.dataInstructP1);
+            this.groupBox3.Location = new System.Drawing.Point(6, 17);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(355, 573);
+            this.groupBox3.TabIndex = 22;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Procesador 1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(271, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Registros P1";
+            // 
+            // dataRegP1
+            // 
+            this.dataRegP1.AllowUserToAddRows = false;
+            this.dataRegP1.AllowUserToDeleteRows = false;
+            this.dataRegP1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataRegP1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineRegP1,
+            this.estRegP1});
+            this.dataRegP1.Location = new System.Drawing.Point(269, 30);
+            this.dataRegP1.Name = "dataRegP1";
+            this.dataRegP1.ReadOnly = true;
+            this.dataRegP1.RowHeadersVisible = false;
+            this.dataRegP1.Size = new System.Drawing.Size(80, 537);
+            this.dataRegP1.TabIndex = 6;
+            // 
+            // lineRegP1
+            // 
+            this.lineRegP1.HeaderText = "#";
+            this.lineRegP1.Name = "lineRegP1";
+            this.lineRegP1.ReadOnly = true;
+            this.lineRegP1.Width = 20;
+            // 
+            // estRegP1
+            // 
+            this.estRegP1.HeaderText = "Valor";
+            this.estRegP1.Name = "estRegP1";
+            this.estRegP1.ReadOnly = true;
+            this.estRegP1.Width = 40;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(144, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 17);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Datos P1 L1";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Instrucciones P1";
+            // 
+            // dataDataL1P1
+            // 
+            this.dataDataL1P1.AllowUserToAddRows = false;
+            this.dataDataL1P1.AllowUserToDeleteRows = false;
+            this.dataDataL1P1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataDataL1P1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineDataP1,
+            this.proc1P1,
+            this.proc1P2,
+            this.etiqP1,
+            this.estP1});
+            this.dataDataL1P1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dataDataL1P1.Location = new System.Drawing.Point(117, 30);
+            this.dataDataL1P1.Name = "dataDataL1P1";
+            this.dataDataL1P1.ReadOnly = true;
+            this.dataDataL1P1.RowHeadersVisible = false;
+            this.dataDataL1P1.Size = new System.Drawing.Size(135, 132);
+            this.dataDataL1P1.TabIndex = 3;
+            // 
+            // lineDataP1
+            // 
+            this.lineDataP1.HeaderText = "#";
+            this.lineDataP1.Name = "lineDataP1";
+            this.lineDataP1.ReadOnly = true;
+            this.lineDataP1.Width = 18;
+            // 
+            // proc1P1
+            // 
+            this.proc1P1.HeaderText = "P1";
+            this.proc1P1.Name = "proc1P1";
+            this.proc1P1.ReadOnly = true;
+            this.proc1P1.Width = 23;
+            // 
+            // proc1P2
+            // 
+            this.proc1P2.HeaderText = "P2";
+            this.proc1P2.Name = "proc1P2";
+            this.proc1P2.ReadOnly = true;
+            this.proc1P2.Width = 23;
+            // 
+            // etiqP1
+            // 
+            this.etiqP1.HeaderText = "Etiq.";
+            this.etiqP1.Name = "etiqP1";
+            this.etiqP1.ReadOnly = true;
+            this.etiqP1.Width = 35;
+            // 
+            // estP1
+            // 
+            this.estP1.HeaderText = "Est.";
+            this.estP1.Name = "estP1";
+            this.estP1.ReadOnly = true;
+            this.estP1.Width = 27;
+            // 
+            // dataInstructP1
+            // 
+            this.dataInstructP1.AllowUserToAddRows = false;
+            this.dataInstructP1.AllowUserToDeleteRows = false;
+            this.dataInstructP1.AllowUserToResizeColumns = false;
+            this.dataInstructP1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.NullValue = "0";
+            this.dataInstructP1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataInstructP1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataInstructP1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataInstructP1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineaInstP1,
+            this.InstruccionP1});
+            this.dataInstructP1.Location = new System.Drawing.Point(6, 30);
+            this.dataInstructP1.Name = "dataInstructP1";
+            this.dataInstructP1.ReadOnly = true;
+            this.dataInstructP1.RowHeadersVisible = false;
+            this.dataInstructP1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataInstructP1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataInstructP1.Size = new System.Drawing.Size(105, 111);
+            this.dataInstructP1.TabIndex = 1;
+            this.dataInstructP1.TabStop = false;
+            // 
+            // lineaInstP1
+            // 
+            this.lineaInstP1.HeaderText = "#";
+            this.lineaInstP1.Name = "lineaInstP1";
+            this.lineaInstP1.ReadOnly = true;
+            this.lineaInstP1.Width = 18;
+            // 
+            // InstruccionP1
+            // 
+            this.InstruccionP1.HeaderText = "Instruccion";
+            this.InstruccionP1.Name = "InstruccionP1";
+            this.InstruccionP1.ReadOnly = true;
+            this.InstruccionP1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.InstruccionP1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.InstruccionP1.Width = 68;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.dataRegP2);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.dataDataL1P2);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.dataInstructP2);
+            this.groupBox4.Location = new System.Drawing.Point(381, 17);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(355, 573);
+            this.groupBox4.TabIndex = 23;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Procesador 2";
+            // 
+            // dataRegP2
+            // 
+            this.dataRegP2.AllowUserToAddRows = false;
+            this.dataRegP2.AllowUserToDeleteRows = false;
+            this.dataRegP2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataRegP2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineNumberRegP2,
+            this.valueRegP2});
+            this.dataRegP2.Location = new System.Drawing.Point(269, 30);
+            this.dataRegP2.Name = "dataRegP2";
+            this.dataRegP2.ReadOnly = true;
+            this.dataRegP2.RowHeadersVisible = false;
+            this.dataRegP2.Size = new System.Drawing.Size(80, 537);
+            this.dataRegP2.TabIndex = 11;
+            // 
+            // lineNumberRegP2
+            // 
+            this.lineNumberRegP2.HeaderText = "#";
+            this.lineNumberRegP2.Name = "lineNumberRegP2";
+            this.lineNumberRegP2.ReadOnly = true;
+            this.lineNumberRegP2.Width = 20;
+            // 
+            // valueRegP2
+            // 
+            this.valueRegP2.HeaderText = "Valor";
+            this.valueRegP2.Name = "valueRegP2";
+            this.valueRegP2.ReadOnly = true;
+            this.valueRegP2.Width = 40;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(266, 14);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 17);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Registros P2";
+            // 
+            // dataDataL1P2
+            // 
+            this.dataDataL1P2.AllowUserToAddRows = false;
+            this.dataDataL1P2.AllowUserToDeleteRows = false;
+            this.dataDataL1P2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataDataL1P2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineNumber,
+            this.dataP1,
+            this.dataP2,
+            this.p2Etiq,
+            this.estP2});
+            this.dataDataL1P2.Location = new System.Drawing.Point(128, 30);
+            this.dataDataL1P2.Name = "dataDataL1P2";
+            this.dataDataL1P2.ReadOnly = true;
+            this.dataDataL1P2.RowHeadersVisible = false;
+            this.dataDataL1P2.Size = new System.Drawing.Size(135, 111);
+            this.dataDataL1P2.TabIndex = 9;
+            // 
+            // lineNumber
+            // 
+            this.lineNumber.HeaderText = "#";
+            this.lineNumber.Name = "lineNumber";
+            this.lineNumber.ReadOnly = true;
+            this.lineNumber.Width = 18;
+            // 
+            // dataP1
+            // 
+            this.dataP1.HeaderText = "P1";
+            this.dataP1.Name = "dataP1";
+            this.dataP1.ReadOnly = true;
+            this.dataP1.Width = 23;
+            // 
+            // dataP2
+            // 
+            this.dataP2.HeaderText = "P2";
+            this.dataP2.Name = "dataP2";
+            this.dataP2.ReadOnly = true;
+            this.dataP2.Width = 23;
+            // 
+            // p2Etiq
+            // 
+            this.p2Etiq.HeaderText = "Etiq.";
+            this.p2Etiq.Name = "p2Etiq";
+            this.p2Etiq.ReadOnly = true;
+            this.p2Etiq.Width = 35;
+            // 
+            // estP2
+            // 
+            this.estP2.HeaderText = "Est.";
+            this.estP2.Name = "estP2";
+            this.estP2.ReadOnly = true;
+            this.estP2.Width = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(150, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 17);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Datos P2 L1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 17);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Instrucciones P2";
+            // 
+            // dataInstructP2
+            // 
+            this.dataInstructP2.AllowUserToAddRows = false;
+            this.dataInstructP2.AllowUserToDeleteRows = false;
+            this.dataInstructP2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataInstructP2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lineaInstP2,
+            this.InstruccionP2});
+            this.dataInstructP2.Location = new System.Drawing.Point(6, 30);
+            this.dataInstructP2.Name = "dataInstructP2";
+            this.dataInstructP2.ReadOnly = true;
+            this.dataInstructP2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataInstructP2.RowHeadersVisible = false;
+            this.dataInstructP2.Size = new System.Drawing.Size(105, 111);
+            this.dataInstructP2.TabIndex = 6;
+            // 
+            // lineaInstP2
+            // 
+            this.lineaInstP2.HeaderText = "#";
+            this.lineaInstP2.Name = "lineaInstP2";
+            this.lineaInstP2.ReadOnly = true;
+            this.lineaInstP2.Width = 18;
+            // 
+            // InstruccionP2
+            // 
+            this.InstruccionP2.HeaderText = "Instruccion";
+            this.InstruccionP2.Name = "InstruccionP2";
+            this.InstruccionP2.ReadOnly = true;
+            this.InstruccionP2.Width = 68;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.groupBox4);
+            this.groupBox5.Controls.Add(this.groupBox3);
+            this.groupBox5.Controls.Add(this.Memoria);
+            this.groupBox5.Controls.Add(this.dataMem);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.dataDataL2);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Location = new System.Drawing.Point(11, 85);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1211, 596);
+            this.groupBox5.TabIndex = 24;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Estados";
+            // 
+            // programBindingSource
+            // 
+            this.programBindingSource.DataSource = typeof(WindowsFormsApp1.Program);
+            // 
             // Form1
             // 
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1063, 415);
+            this.ClientSize = new System.Drawing.Size(1234, 693);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Procesador de hilillos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataL2)).EndInit();
