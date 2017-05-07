@@ -75,16 +75,30 @@ namespace WindowsFormsApp1
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataRegP1 = new System.Windows.Forms.DataGridView();
+            this.lineRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataDataL1P1 = new System.Windows.Forms.DataGridView();
+            this.lineDataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proc1P1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proc1P2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.etiqP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataInstructP1 = new System.Windows.Forms.DataGridView();
             this.lineaInstP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InstruccionP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataRegP2 = new System.Windows.Forms.DataGridView();
+            this.lineNumberRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.dataDataL1P2 = new System.Windows.Forms.DataGridView();
+            this.lineNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.p2Etiq = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dataInstructP2 = new System.Windows.Forms.DataGridView();
@@ -92,20 +106,11 @@ namespace WindowsFormsApp1
             this.InstruccionP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lineRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estRegP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineNumberRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valueRegP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineDataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proc1P1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proc1P2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.etiqP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lineNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.p2Etiq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estP2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.openFileDialogOpen = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.fileDirection = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.getProgram = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataL2)).BeginInit();
@@ -120,11 +125,12 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.dataInstructP2)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAuto
             // 
-            this.btnAuto.Location = new System.Drawing.Point(77, 10);
+            this.btnAuto.Location = new System.Drawing.Point(68, 15);
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Size = new System.Drawing.Size(97, 23);
             this.btnAuto.TabIndex = 12;
@@ -133,7 +139,7 @@ namespace WindowsFormsApp1
             // 
             // btnStepByStep
             // 
-            this.btnStepByStep.Location = new System.Drawing.Point(77, 39);
+            this.btnStepByStep.Location = new System.Drawing.Point(68, 39);
             this.btnStepByStep.Name = "btnStepByStep";
             this.btnStepByStep.Size = new System.Drawing.Size(97, 23);
             this.btnStepByStep.TabIndex = 13;
@@ -142,7 +148,7 @@ namespace WindowsFormsApp1
             // 
             // btnNextStep
             // 
-            this.btnNextStep.Location = new System.Drawing.Point(81, 10);
+            this.btnNextStep.Location = new System.Drawing.Point(71, 15);
             this.btnNextStep.Name = "btnNextStep";
             this.btnNextStep.Size = new System.Drawing.Size(109, 23);
             this.btnNextStep.TabIndex = 16;
@@ -152,7 +158,7 @@ namespace WindowsFormsApp1
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(87, 39);
+            this.btnContinue.Location = new System.Drawing.Point(72, 39);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(97, 23);
             this.btnContinue.TabIndex = 17;
@@ -394,6 +400,20 @@ namespace WindowsFormsApp1
             this.dataRegP1.Size = new System.Drawing.Size(80, 537);
             this.dataRegP1.TabIndex = 6;
             // 
+            // lineRegP1
+            // 
+            this.lineRegP1.HeaderText = "#";
+            this.lineRegP1.Name = "lineRegP1";
+            this.lineRegP1.ReadOnly = true;
+            this.lineRegP1.Width = 25;
+            // 
+            // estRegP1
+            // 
+            this.estRegP1.HeaderText = "Valor";
+            this.estRegP1.Name = "estRegP1";
+            this.estRegP1.ReadOnly = true;
+            this.estRegP1.Width = 40;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -430,6 +450,41 @@ namespace WindowsFormsApp1
             this.dataDataL1P1.RowHeadersVisible = false;
             this.dataDataL1P1.Size = new System.Drawing.Size(146, 123);
             this.dataDataL1P1.TabIndex = 3;
+            // 
+            // lineDataP1
+            // 
+            this.lineDataP1.HeaderText = "#";
+            this.lineDataP1.Name = "lineDataP1";
+            this.lineDataP1.ReadOnly = true;
+            this.lineDataP1.Width = 25;
+            // 
+            // proc1P1
+            // 
+            this.proc1P1.HeaderText = "P1";
+            this.proc1P1.Name = "proc1P1";
+            this.proc1P1.ReadOnly = true;
+            this.proc1P1.Width = 23;
+            // 
+            // proc1P2
+            // 
+            this.proc1P2.HeaderText = "P2";
+            this.proc1P2.Name = "proc1P2";
+            this.proc1P2.ReadOnly = true;
+            this.proc1P2.Width = 23;
+            // 
+            // etiqP1
+            // 
+            this.etiqP1.HeaderText = "Etiq.";
+            this.etiqP1.Name = "etiqP1";
+            this.etiqP1.ReadOnly = true;
+            this.etiqP1.Width = 35;
+            // 
+            // estP1
+            // 
+            this.estP1.HeaderText = "Est.";
+            this.estP1.Name = "estP1";
+            this.estP1.ReadOnly = true;
+            this.estP1.Width = 27;
             // 
             // dataInstructP1
             // 
@@ -500,6 +555,20 @@ namespace WindowsFormsApp1
             this.dataRegP2.Size = new System.Drawing.Size(80, 537);
             this.dataRegP2.TabIndex = 11;
             // 
+            // lineNumberRegP2
+            // 
+            this.lineNumberRegP2.HeaderText = "#";
+            this.lineNumberRegP2.Name = "lineNumberRegP2";
+            this.lineNumberRegP2.ReadOnly = true;
+            this.lineNumberRegP2.Width = 25;
+            // 
+            // valueRegP2
+            // 
+            this.valueRegP2.HeaderText = "Valor";
+            this.valueRegP2.Name = "valueRegP2";
+            this.valueRegP2.ReadOnly = true;
+            this.valueRegP2.Width = 40;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -526,6 +595,41 @@ namespace WindowsFormsApp1
             this.dataDataL1P2.RowHeadersVisible = false;
             this.dataDataL1P2.Size = new System.Drawing.Size(145, 123);
             this.dataDataL1P2.TabIndex = 9;
+            // 
+            // lineNumber
+            // 
+            this.lineNumber.HeaderText = "#";
+            this.lineNumber.Name = "lineNumber";
+            this.lineNumber.ReadOnly = true;
+            this.lineNumber.Width = 25;
+            // 
+            // dataP1
+            // 
+            this.dataP1.HeaderText = "P1";
+            this.dataP1.Name = "dataP1";
+            this.dataP1.ReadOnly = true;
+            this.dataP1.Width = 23;
+            // 
+            // dataP2
+            // 
+            this.dataP2.HeaderText = "P2";
+            this.dataP2.Name = "dataP2";
+            this.dataP2.ReadOnly = true;
+            this.dataP2.Width = 23;
+            // 
+            // p2Etiq
+            // 
+            this.p2Etiq.HeaderText = "Etiq.";
+            this.p2Etiq.Name = "p2Etiq";
+            this.p2Etiq.ReadOnly = true;
+            this.p2Etiq.Width = 35;
+            // 
+            // estP2
+            // 
+            this.estP2.HeaderText = "Est.";
+            this.estP2.Name = "estP2";
+            this.estP2.ReadOnly = true;
+            this.estP2.Width = 27;
             // 
             // label6
             // 
@@ -595,109 +699,56 @@ namespace WindowsFormsApp1
             // 
             this.programBindingSource.DataSource = typeof(WindowsFormsApp1.Program);
             // 
-            // lineRegP1
+            // openFileDialogOpen
             // 
-            this.lineRegP1.HeaderText = "#";
-            this.lineRegP1.Name = "lineRegP1";
-            this.lineRegP1.ReadOnly = true;
-            this.lineRegP1.Width = 25;
+            this.openFileDialogOpen.FileName = "openFileDialog1";
             // 
-            // estRegP1
+            // button1
             // 
-            this.estRegP1.HeaderText = "Valor";
-            this.estRegP1.Name = "estRegP1";
-            this.estRegP1.ReadOnly = true;
-            this.estRegP1.Width = 40;
+            this.button1.Location = new System.Drawing.Point(60, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 23);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Abrir Archivo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lineNumberRegP2
+            // fileDirection
             // 
-            this.lineNumberRegP2.HeaderText = "#";
-            this.lineNumberRegP2.Name = "lineNumberRegP2";
-            this.lineNumberRegP2.ReadOnly = true;
-            this.lineNumberRegP2.Width = 25;
+            this.fileDirection.Enabled = false;
+            this.fileDirection.Location = new System.Drawing.Point(197, 14);
+            this.fileDirection.Name = "fileDirection";
+            this.fileDirection.Size = new System.Drawing.Size(250, 24);
+            this.fileDirection.TabIndex = 26;
             // 
-            // valueRegP2
+            // groupBox6
             // 
-            this.valueRegP2.HeaderText = "Valor";
-            this.valueRegP2.Name = "valueRegP2";
-            this.valueRegP2.ReadOnly = true;
-            this.valueRegP2.Width = 40;
+            this.groupBox6.Controls.Add(this.getProgram);
+            this.groupBox6.Controls.Add(this.fileDirection);
+            this.groupBox6.Controls.Add(this.button1);
+            this.groupBox6.Location = new System.Drawing.Point(464, 10);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(453, 69);
+            this.groupBox6.TabIndex = 27;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Archivo";
             // 
-            // lineDataP1
+            // getProgram
             // 
-            this.lineDataP1.HeaderText = "#";
-            this.lineDataP1.Name = "lineDataP1";
-            this.lineDataP1.ReadOnly = true;
-            this.lineDataP1.Width = 25;
-            // 
-            // proc1P1
-            // 
-            this.proc1P1.HeaderText = "P1";
-            this.proc1P1.Name = "proc1P1";
-            this.proc1P1.ReadOnly = true;
-            this.proc1P1.Width = 23;
-            // 
-            // proc1P2
-            // 
-            this.proc1P2.HeaderText = "P2";
-            this.proc1P2.Name = "proc1P2";
-            this.proc1P2.ReadOnly = true;
-            this.proc1P2.Width = 23;
-            // 
-            // etiqP1
-            // 
-            this.etiqP1.HeaderText = "Etiq.";
-            this.etiqP1.Name = "etiqP1";
-            this.etiqP1.ReadOnly = true;
-            this.etiqP1.Width = 35;
-            // 
-            // estP1
-            // 
-            this.estP1.HeaderText = "Est.";
-            this.estP1.Name = "estP1";
-            this.estP1.ReadOnly = true;
-            this.estP1.Width = 27;
-            // 
-            // lineNumber
-            // 
-            this.lineNumber.HeaderText = "#";
-            this.lineNumber.Name = "lineNumber";
-            this.lineNumber.ReadOnly = true;
-            this.lineNumber.Width = 25;
-            // 
-            // dataP1
-            // 
-            this.dataP1.HeaderText = "P1";
-            this.dataP1.Name = "dataP1";
-            this.dataP1.ReadOnly = true;
-            this.dataP1.Width = 23;
-            // 
-            // dataP2
-            // 
-            this.dataP2.HeaderText = "P2";
-            this.dataP2.Name = "dataP2";
-            this.dataP2.ReadOnly = true;
-            this.dataP2.Width = 23;
-            // 
-            // p2Etiq
-            // 
-            this.p2Etiq.HeaderText = "Etiq.";
-            this.p2Etiq.Name = "p2Etiq";
-            this.p2Etiq.ReadOnly = true;
-            this.p2Etiq.Width = 35;
-            // 
-            // estP2
-            // 
-            this.estP2.HeaderText = "Est.";
-            this.estP2.Name = "estP2";
-            this.estP2.ReadOnly = true;
-            this.estP2.Width = 27;
+            this.getProgram.Location = new System.Drawing.Point(60, 39);
+            this.getProgram.Name = "getProgram";
+            this.getProgram.Size = new System.Drawing.Size(131, 24);
+            this.getProgram.TabIndex = 27;
+            this.getProgram.Text = "Cargar programa";
+            this.getProgram.UseVisualStyleBackColor = true;
+            this.getProgram.Click += new System.EventHandler(this.getProgram_Click);
             // 
             // Form1
             // 
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1234, 693);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -726,6 +777,8 @@ namespace WindowsFormsApp1
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -791,6 +844,11 @@ namespace WindowsFormsApp1
         private DataGridViewTextBoxColumn dataP2;
         private DataGridViewTextBoxColumn p2Etiq;
         private DataGridViewTextBoxColumn estP2;
+        private OpenFileDialog openFileDialogOpen;
+        private Button button1;
+        private TextBox fileDirection;
+        private GroupBox groupBox6;
+        private Button getProgram;
     }
 
 }

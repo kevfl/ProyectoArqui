@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -212,7 +213,30 @@ namespace WindowsFormsApp1
             btnContinue.Enabled = false;
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog obj = new OpenFileDialog();
+            obj.Filter = " Archivos txt(*.txt)|*.txt";
+            obj.Title = "Programa";
+            if (obj.ShowDialog() == DialogResult.OK) {
+                fileDirection.Text = obj.FileName;
+            }
+        }
+
+        private void getProgram_Click(object sender, EventArgs e)
+        {
+            string data;
+            if (fileDirection != null && fileDirection.Text.Length > 0) {
+                try
+                {
+                    data = File.ReadAllText(@fileDirection.Text);
+                }
+                catch {
+                    fileDirection.Text = "Error al cargar dicho archivo.";
+                    
+                }
+            }
+        }
     }
         
 }
