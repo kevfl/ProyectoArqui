@@ -12,22 +12,20 @@ public class MainMemory : DbContext
     private int tamMemoryInstruction;
 
     //Método que inicializa la memoria de instrucciones y la de datos con 1's
-    public MainMemory(int tamData, int tamInstruction)
-        {
-            memoryData = new int[tamData];
-            memoryInstruction = new int[tamInstruction];
+    public MainMemory(int tamData, int tamInstruction){
+        memoryData = new int[tamData];
+        memoryInstruction = new int[tamInstruction];
 
-            SetTamMemoryData(tamData);
-            SetTamMemoryInstrucion(tamInstruction);
+        SetTamMemoryData(tamData);
+        SetTamMemoryInstrucion(tamInstruction);
 
-            for (int i = 0; i < tamData; i++) {
-                SetMemoryData(i, 1);
-            }
-
-            for (int i = 0; i < tamInstruction; i++){
-                SetMemoryInstruction(i, 1);
-            }
+        for (int i = 0; i < tamData; i++) {
+            SetMemoryData(i, -1);
         }
+        for (int i = 0; i < tamInstruction; i++){
+            SetMemoryInstruction(i, -1);
+        }
+    }
     
     //Método que establece el tamaño de la memoria de datos.
     public void SetTamMemoryData(int tamData) {
@@ -77,9 +75,31 @@ public class MainMemory : DbContext
     }
 
     public Instruction GetInstruction(int pos) {
+        pos = pos % this.tamMemoryInstruction;
         return new Instruction(GetMemoryInstruction(pos*16),
                          GetMemoryInstruction(pos * 16 + 1),
                          GetMemoryInstruction(pos * 16 + 2),
                          GetMemoryInstruction(pos * 16 + 3));
     }
+
+
+    //Esto no va aca!
+    /*public Block GetBlock(int pos){
+
+
+    }*/
+
+
+    //Usados en UI
+    public int[] GetAllMemoryData(){
+        return memoryData;
+    }
+
+    //Usados en UI
+    public int[] GetAllMemoryInstruction(){
+        return memoryInstruction;
+    }
+
+
+
 }
